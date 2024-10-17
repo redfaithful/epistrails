@@ -1,0 +1,122 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-popups/styles/material.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.e-tooltip-wrap.e-popup {
+  background: white;
+  position: absolute;
+  box-shadow: 3px 3px 10px #888888;
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.e-tooltip-wrap .e-tip-content {
+  color: black;
+  font-size: 16px;
+  max-width: 13em;
+}
+
+div.entityType {
+  font-weight: 900;
+  font-family: 'PT Sans Narrow', sans-serif;
+  display: block;
+}
+
+.relationshipText {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: white;
+}
+
+.errorString {
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+}
+
+g.dialog rect {
+  stroke: white;
+  stroke-width: 3px;
+}
+
+.topAttribute {
+  text-align: center;
+}
+
+div.hexagonText {
+  color: black;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+#query_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+}
+
+#search_submit {
+  color: white;
+  background: #777C80;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 3px;
+  letter-spacing: 1px;
+  border:0 none;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#preloaderPath {
+  fill: grey;
+  fill-opacity: 0.6;
+
+  transform-origin: center;
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
