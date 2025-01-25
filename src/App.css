@@ -1,41 +1,37 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topPanel {
+  background-color: #f4f4f4;
+  padding: 20px;
   text-align: center;
+  flex-shrink: 0; /* Prevents the top panel from shrinking */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mainLayout {
+  display: flex;
+  flex-grow: 1; /* Allows the main layout to take the remaining space */
+  gap: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leftPanel {
+  background-color: #e0e0e0;
+  padding: 20px;
+  flex: 1; /* Takes equal space as the right panel */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.mainPanel {
+  background-color: #ffffff;
+  padding: 20px;
+  flex: 3; /* Takes more space than the left and right panels */
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.rightPanel {
+  background-color: #e0e0e0;
+  padding: 20px;
+  flex: 1; /* Takes equal space as the left panel */
 }
