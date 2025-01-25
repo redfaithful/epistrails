@@ -1,6 +1,11 @@
+import PdfAnalyzer from "./PdfAnalyze";
 
-export default function MainPanel() {
+const MainPanel = () => {
   return (
-    <div className="mainPanel">Main Panel</div>
+    <div className="mainPanel">
+      <PdfAnalyzer />
+    </div>
   )
 }
+
+export default MainPanel;

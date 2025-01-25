@@ -10,12 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.16.14",
+    "fit-curve": "^0.2.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-pdf": "^5.7.2",
+    "react-pdf-highlighter": "^3.1.0"
   },
   "devDependencies": {
-    "@syncfusion/ej2-react-popups": "^21.2.4",
     "@eslint/js": "^9.9.0",
+    "@syncfusion/ej2-react-popups": "^21.2.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

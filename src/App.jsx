@@ -1,6 +1,5 @@
-import {useState} from 'react'
 import './App.css'
-import Home from './components/page.tsx'
+import Home from './pages/page.tsx'
 
 function App() {
     return (

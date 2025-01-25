@@ -1,9 +1,9 @@
 "use client"
 import '../App.css';
-import TopPanel from "./TopPanel";
-import LeftPanel from "./LeftPanel";
-import MainPanel from "./MainPanel";
-import RightPanel from "./RightPanel";
+import TopPanel from "../components/TopPanel";
+import LeftPanel from "../components/LeftPanel";
+import MainPanel from "../components/MainPanel";
+import RightPanel from "../components/RightPanel";
 
 export default function Home() {
   return (
