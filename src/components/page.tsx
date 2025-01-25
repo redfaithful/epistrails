@@ -1,19 +1,12 @@
 "use client"
-import '../App.css';
-import TopPanel from "./TopPanel";
-import LeftPanel from "./LeftPanel";
-import MainPanel from "./MainPanel";
-import RightPanel from "./RightPanel";
+import {useEffect, useState} from "react"
 
 export default function Home() {
   return (
-    <div className="container">
-      <TopPanel />
-      <div className="mainLayout">
-        <LeftPanel />
-        <MainPanel />
-        <RightPanel />
+    <main>
+      <div>
+        Hello
       </div>
-    </div>
+    </main>
   )
 }
